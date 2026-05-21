@@ -19,9 +19,9 @@ This project demonstrates a complete MLOps pipeline for fine-tuning a DistilBERT
 
 | Metric    | Score  |
 |-----------|--------|
-| Accuracy  | 0.5869 |
-| F1 Score  | 0.5881 |
-| Eval Loss | 2.35   |
+| Accuracy  | 0.5988 |
+| F1 Score  | 0.5978 |
+| Eval Loss | 2.2275 |
 
 ## Links
 
