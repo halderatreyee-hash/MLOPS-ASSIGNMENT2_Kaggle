@@ -1,63 +1,63 @@
 {
-  "young_adult": {
-    "precision": 0.34210526315789475,
-    "recall": 0.26,
-    "f1-score": 0.29545454545454547,
-    "support": 200.0
-  },
-  "mystery_thriller_crime": {
-    "precision": 0.5133928571428571,
-    "recall": 0.575,
-    "f1-score": 0.5424528301886793,
-    "support": 200.0
-  },
-  "fantasy_paranormal": {
-    "precision": 0.41626794258373206,
-    "recall": 0.435,
-    "f1-score": 0.4254278728606357,
-    "support": 200.0
-  },
-  "comics_graphic": {
-    "precision": 0.7941176470588235,
-    "recall": 0.81,
-    "f1-score": 0.801980198019802,
-    "support": 200.0
-  },
-  "poetry": {
-    "precision": 0.7867298578199052,
-    "recall": 0.83,
-    "f1-score": 0.8077858880778589,
-    "support": 200.0
-  },
-  "children": {
-    "precision": 0.7015706806282722,
-    "recall": 0.67,
-    "f1-score": 0.6854219948849105,
-    "support": 200.0
-  },
   "history_biography": {
-    "precision": 0.5918367346938775,
+    "precision": 0.5395348837209303,
     "recall": 0.58,
-    "f1-score": 0.5858585858585859,
+    "f1-score": 0.5590361445783133,
     "support": 200.0
   },
   "romance": {
-    "precision": 0.5915492957746479,
-    "recall": 0.63,
-    "f1-score": 0.6101694915254238,
+    "precision": 0.6132596685082873,
+    "recall": 0.555,
+    "f1-score": 0.5826771653543307,
     "support": 200.0
   },
-  "accuracy": 0.59875,
+  "children": {
+    "precision": 0.6844919786096256,
+    "recall": 0.64,
+    "f1-score": 0.661498708010336,
+    "support": 200.0
+  },
+  "poetry": {
+    "precision": 0.7066666666666667,
+    "recall": 0.795,
+    "f1-score": 0.7482352941176471,
+    "support": 200.0
+  },
+  "comics_graphic": {
+    "precision": 0.8666666666666667,
+    "recall": 0.78,
+    "f1-score": 0.8210526315789474,
+    "support": 200.0
+  },
+  "fantasy_paranormal": {
+    "precision": 0.3333333333333333,
+    "recall": 0.345,
+    "f1-score": 0.33906633906633904,
+    "support": 200.0
+  },
+  "mystery_thriller_crime": {
+    "precision": 0.5353982300884956,
+    "recall": 0.605,
+    "f1-score": 0.568075117370892,
+    "support": 200.0
+  },
+  "young_adult": {
+    "precision": 0.3575418994413408,
+    "recall": 0.32,
+    "f1-score": 0.33773087071240104,
+    "support": 200.0
+  },
+  "accuracy": 0.5775,
   "macro avg": {
-    "precision": 0.5921962848575013,
-    "recall": 0.59875,
-    "f1-score": 0.5943189258588052,
+    "precision": 0.5796116658794183,
+    "recall": 0.5775,
+    "f1-score": 0.5771715338486507,
     "support": 1600.0
   },
   "weighted avg": {
-    "precision": 0.5921962848575012,
-    "recall": 0.59875,
-    "f1-score": 0.5943189258588052,
+    "precision": 0.5796116658794184,
+    "recall": 0.5775,
+    "f1-score": 0.5771715338486508,
     "support": 1600.0
   }
 }
