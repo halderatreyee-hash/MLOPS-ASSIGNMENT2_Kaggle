@@ -1,63 +1,63 @@
 {
+  "fantasy_paranormal": {
+    "precision": 0.3953488372093023,
+    "recall": 0.425,
+    "f1-score": 0.40963855421686746,
+    "support": 200.0
+  },
   "mystery_thriller_crime": {
-    "precision": 0.532967032967033,
-    "recall": 0.485,
-    "f1-score": 0.5078534031413613,
-    "support": 200.0
-  },
-  "history_biography": {
-    "precision": 0.591715976331361,
-    "recall": 0.5,
-    "f1-score": 0.5420054200542005,
-    "support": 200.0
-  },
-  "children": {
-    "precision": 0.6523605150214592,
-    "recall": 0.76,
-    "f1-score": 0.7020785219399538,
-    "support": 200.0
-  },
-  "poetry": {
-    "precision": 0.7248908296943232,
-    "recall": 0.83,
-    "f1-score": 0.7738927738927739,
+    "precision": 0.5652173913043478,
+    "recall": 0.52,
+    "f1-score": 0.5416666666666666,
     "support": 200.0
   },
   "young_adult": {
-    "precision": 0.3101851851851852,
-    "recall": 0.335,
-    "f1-score": 0.32211538461538464,
+    "precision": 0.3446327683615819,
+    "recall": 0.305,
+    "f1-score": 0.32360742705570295,
     "support": 200.0
   },
-  "romance": {
-    "precision": 0.5887850467289719,
-    "recall": 0.63,
-    "f1-score": 0.6086956521739131,
+  "poetry": {
+    "precision": 0.8162162162162162,
+    "recall": 0.755,
+    "f1-score": 0.7844155844155845,
     "support": 200.0
   },
   "comics_graphic": {
-    "precision": 0.8658536585365854,
-    "recall": 0.71,
-    "f1-score": 0.7802197802197802,
+    "precision": 0.7815533980582524,
+    "recall": 0.805,
+    "f1-score": 0.7931034482758621,
     "support": 200.0
   },
-  "fantasy_paranormal": {
-    "precision": 0.43005181347150256,
-    "recall": 0.415,
-    "f1-score": 0.4223918575063613,
+  "children": {
+    "precision": 0.6183574879227053,
+    "recall": 0.64,
+    "f1-score": 0.628992628992629,
     "support": 200.0
   },
-  "accuracy": 0.583125,
+  "history_biography": {
+    "precision": 0.6052631578947368,
+    "recall": 0.575,
+    "f1-score": 0.5897435897435898,
+    "support": 200.0
+  },
+  "romance": {
+    "precision": 0.5254237288135594,
+    "recall": 0.62,
+    "f1-score": 0.5688073394495413,
+    "support": 200.0
+  },
+  "accuracy": 0.580625,
   "macro avg": {
-    "precision": 0.5871012572420526,
-    "recall": 0.5831249999999999,
-    "f1-score": 0.5824065991929661,
+    "precision": 0.5815016232225878,
+    "recall": 0.580625,
+    "f1-score": 0.5799969048520555,
     "support": 1600.0
   },
   "weighted avg": {
-    "precision": 0.5871012572420526,
-    "recall": 0.583125,
-    "f1-score": 0.582406599192966,
+    "precision": 0.5815016232225878,
+    "recall": 0.580625,
+    "f1-score": 0.5799969048520555,
     "support": 1600.0
   }
 }
