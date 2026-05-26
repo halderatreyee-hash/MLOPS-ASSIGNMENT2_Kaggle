@@ -35,18 +35,18 @@ Data Ingestion → Baseline Model → Tokenization → Fine-Tuning → Evaluatio
 
 ### Step-by-Step Workflow
 
-1. **Data Collection** — Stream and sample 2,000 reviews per genre (16,000 total) from UCSD Goodreads hosted datasets.
-2. **Train/Test Split** — 800 train + 200 test per genre → 6,400 training / 1,600 test samples.
-3. **Baseline Model** — TF-IDF + Logistic Regression to establish a baseline performance benchmark.
-4. **Tokenization** — Encode texts using `DistilBertTokenizerFast` with truncation and padding (max 512 tokens).
-5. **Fine-Tuning** — Fine-tune `distilbert-base-cased` using HuggingFace `Trainer` with W&B integration.
-6. **Evaluation** — Generate classification report, log metrics (accuracy, F1, loss) to W&B.
-7. **Artifact Logging** — Save `eval_report.json` as a versioned W&B Artifact.
-8. **Model Deployment** — Push fine-tuned model and tokenizer to Hugging Face Hub.
-9. **Model Card** — Auto-update HF model card with evaluation results and hyperparameters.
-10. **Version Control** — Push notebook, eval report, and README to GitHub.
+1. **Data Collection** - Stream and sample 2,000 reviews per genre (16,000 total) from UCSD Goodreads hosted datasets.
+2. **Train/Test Split** - 800 train + 200 test per genre → 6,400 training / 1,600 test samples.
+3. **Baseline Model** - TF-IDF + Logistic Regression to establish a baseline performance benchmark.
+4. **Tokenization** - Encode texts using `DistilBertTokenizerFast` with truncation and padding (max 512 tokens).
+5. **Fine-Tuning** - Fine-tune `distilbert-base-cased` using HuggingFace `Trainer` with W&B integration.
+6. **Evaluation** - Generate classification report, log metrics (accuracy, F1, loss) to W&B.
+7. **Artifact Logging** - Save `eval_report.json` as a versioned W&B Artifact.
+8. **Model Deployment** - Push fine-tuned model and tokenizer to Hugging Face Hub.
+9. **Model Card** - Auto-update HF model card with evaluation results and hyperparameters.
+10. **Version Control** - Push notebook, eval report, and README to GitHub.
 
----
+----
 
 ## Model & Training Configuration
 
@@ -71,28 +71,28 @@ Data Ingestion → Baseline Model → Tokenization → Fine-Tuning → Evaluatio
 
 | Metric | Score |
 |--------|-------|
-| Accuracy | 0.5875 |
-| Weighted F1 | 0.5833 |
-| Eval Loss | 2.2617 |
+| Accuracy | 0.5919 |
+| Weighted F1 | 0.5935 |
+| Eval Loss | 2.2633 |
 
 ### Per-Genre Classification Report
 
 | Genre | Precision | Recall | F1-Score | Support |
 |-------|-----------|--------|----------|---------|
-| children | 0.65 | 0.66 | 0.66 | 200 |
-| comics_graphic | 0.77 | 0.82 | 0.80 | 200 |
-| fantasy_paranormal | 0.42 | 0.38 | 0.40 | 200 |
-| history_biography | 0.60 | 0.53 | 0.56 | 200 |
-| mystery_thriller_crime | 0.50 | 0.58 | 0.54 | 200 |
-| poetry | 0.77 | 0.80 | 0.78 | 200 |
-| romance | 0.61 | 0.64 | 0.62 | 200 |
-| young_adult | 0.33 | 0.29 | 0.31 | 200 |
+| children | 0.65 | 0.65 | 0.65 | 200 |
+| comics_graphic | 0.85 | 0.80 | 0.82 | 200 |
+| fantasy_paranormal | 0.38 | 0.44 | 0.41 | 200 |
+| history_biography | 0.54 | 0.55 | 0.54 | 200 |
+| mystery_thriller_crime | 0.52 | 0.55 | 0.53 | 200 |
+| poetry | 0.79 | 0.79 | 0.79 | 200 |
+| romance | 0.68 | 0.66 | 0.67 | 200 |
+| young_adult | 0.35 | 0.32 | 0.33 | 200 |
 
 ### Key Observations
 
-- **Best performing genres:** `comics_graphic` and `poetry` — these have distinctive review language.
-- **Most confused genres:** `young_adult` and `fantasy_paranormal` — frequently misclassified as `mystery_thriller_crime` due to overlapping vocabulary.
-- **Overall:** 58.8% accuracy across 8 classes is well above the ~12.5% random baseline.
+- **Best performing genres:** `comics_graphic` and `poetry` - these have distinctive review language.
+- **Most confused genres:** `young_adult` and `fantasy_paranormal` - frequently misclassified as `mystery_thriller_crime` due to overlapping vocabulary.
+- **Overall:** 59.2% accuracy across 8 classes is well above the ~12.5% random baseline.
 
 ---
 
@@ -133,9 +133,9 @@ MLOPS-ASSIGNMENT2_Kaggle/
 2. Enable GPU: **Settings → Accelerator → GPU T4 x2**
 3. Enable Internet: **Settings → Internet → ON**
 4. Add Kaggle Secrets:
-   - `WANDB_API_KEY` — from [wandb.ai/authorize](https://wandb.ai/authorize)
-   - `HF_TOKEN` — from [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
-   - `Kaggle-Push` — GitHub personal access token for repo push
+   - `WANDB_API_KEY` - from [wandb.ai/authorize](https://wandb.ai/authorize)
+   - `HF_TOKEN` - from [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
+   - `Kaggle-Push` - GitHub personal access token for repo push
 5. Click **Run All**.
 
 ---
